@@ -18,6 +18,8 @@ iptables -t nat -A shadowsocks -d 172.16/12 -j RETURN
 iptables -t nat -A shadowsocks -d 192.168/16 -j RETURN
 iptables -t nat -A shadowsocks -d 224/4 -j RETURN
 iptables -t nat -A shadowsocks -d 240/4 -j RETURN
+
+# 以下IP为局域网内不走代理的设备IP
 iptables -t nat -A shadowsocks -s 192.168.2.110 -j RETURN
 iptables -t nat -A shadowsocks -s 192.168.2.120 -j RETURN
 iptables -t nat -A shadowsocks -s 192.168.2.130 -j RETURN
