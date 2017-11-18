@@ -15,5 +15,8 @@
     `sudo apt-get install dnsmasq`
   - modify /etc/dnsmasq.conf
 
+```
     no-resolv
     server=
+```
+    
