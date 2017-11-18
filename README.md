@@ -10,3 +10,10 @@
   - Copy the chinadns bash script to /etc/init.d/
 
 * Install dnsmasq
+  - Run command to install dnsmasq
+
+    `sudo apt-get install dnsmasq`
+  - modify /etc/dnsmasq.conf
+
+    no-resolv
+    server=
