@@ -33,6 +33,12 @@
     ```
   - Copy the config.123.123.123.123.json to /etc/shadowsocks-libev 
 
+## Enable Forwarding
+  - Open /etc/sysctl.conf, uncomment
+  `net.ipv4.ip_forward=1`
+  - Make the change take effect
+  `sysctl -p`
+  
 ## Set up iptables
 * Generate ipset
   ```
